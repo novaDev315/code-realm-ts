@@ -1,0 +1,160 @@
+---
+description: Git commit guidelines for maintaining a clean and informative project history use it when commiting change 
+globs: 
+alwaysApply: false
+---
+
+# Git Commit Guidelines
+
+This document outlines the commit practices to follow when contributing to this project. Following these guidelines ensures a clean, informative, and useful project history.
+
+## Conventional Commits Format
+
+All commits should follow the [Conventional Commits](mdc:https:/www.conventionalcommits.org) specification:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+### Types
+
+Use these types to categorize your changes:
+
+- **feat**: A new feature for users (not a feature for the build script)
+- **fix**: A bug fix for users (not a fix for the build script)
+- **docs**: Documentation changes only
+- **style**: Code style changes (formatting, indentation) that don't affect functionality
+- **refactor**: Code changes that neither fix bugs nor add features
+- **perf**: Performance improvements
+- **test**: Adding or fixing tests
+- **build**: Changes to build system or dependencies
+- **ci**: Changes to CI configuration or scripts
+- **chore**: Other changes that don't modify src or test files
+
+### Commit Message Format
+
+1. **Title (first line)**:
+   - Start with the type: `feat:`, `fix:`, etc.
+   - Keep it under 72 characters
+   - Use imperative mood ("add" not "added" or "adds")
+   - No period at the end
+   - Be concise but descriptive
+
+2. **Body (optional)**:
+   - Separate from title with a blank line
+   - Explain *what* and *why* (not *how*)
+   - May include bullet points (using hyphens or asterisks)
+   - Can include multiple paragraphs separated by blank lines
+
+## Grouping Related Changes
+
+1. **Atomic Commits**:
+   - Each commit should represent one logical change
+   - If you find yourself using "and" in your commit message, consider splitting it
+
+2. **Group Related Files**:
+   - Group files that change together for the same reason
+   - Example groupings:
+     - Documentation updates
+     - Feature implementation across multiple modules
+     - Test suite changes
+     - Refactoring related components
+
+3. **Logical Units**:
+   - Group by feature or functionality, not by file type
+   - Changes that must work together should be committed together
+
+## Commit Size Guidelines
+
+1. **Prefer Smaller Commits**:
+   - Easier to review, understand, and revert if needed
+   - Aim for 200-400 lines of change per commit when possible
+
+2. **Exceptions for Large Changes**:
+   - Major refactorings may need larger commits
+   - Initial implementation of large features
+   - Large-scale documentation updates
+
+## Practical Workflow
+
+1. **Stage Related Changes Together**:
+   ```bash
+   git add file1.py file2.py file3.py
+   ```
+
+2. **Review What's Staged**:
+   ```bash
+   git diff --staged
+   ```
+
+3. **Create Descriptive Commit**:
+   ```bash
+   git commit -m "feat: implement user authentication" -m "Add login, registration, and password reset functionality with JWT token support"
+   ```
+
+4. **Check Status Between Commits**:
+   ```bash
+   git status
+   ```
+
+## Examples of Good Commits
+
+```
+feat: add trading strategy backtesting visualization
+
+Implement interactive charts showing strategy performance metrics including:
+- Equity curve with drawdown highlighting
+- Trade distribution analysis
+- Risk-adjusted return metrics
+
+This helps users better understand strategy performance characteristics.
+```
+
+```
+fix: resolve pandas ChainedAssignmentError warnings
+
+Replace data['column'].iloc[i] = value pattern with data.loc[i, 'column'] = value
+to prevent issues with pandas 3.0 behavior changes.
+```
+
+```
+refactor: consolidate test scripts and remove outdated documentation
+
+Replace multiple test scripts with unified run_tests.sh, remove deprecated test
+fixture readme.
+```
+
+## Bad Commit Examples to Avoid
+
+```
+update stuff
+```
+
+```
+fixed bugs
+```
+
+```
+WIP
+```
+
+## Special Commit Flags
+
+For breaking changes, add an exclamation mark before the colon:
+
+```
+feat!: change API response format
+
+BREAKING CHANGE: The response format has changed from XML to JSON.
+This will require clients to update their parsers.
+```
+
+By following these guidelines, we maintain a clean and useful project history that makes it easier to:
+- Understand the project's evolution
+- Find when and why changes were made
+- Revert changes if needed
+- Generate meaningful changelogs 
