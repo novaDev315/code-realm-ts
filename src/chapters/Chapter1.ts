@@ -13,8 +13,8 @@ It speaks only in repeating patterns. Solve its trials:
 `;
 
   run(): boolean {
-    // MVP placeholder – automatically succeed
-    return true;
+    const { runCheck } = require("../../quests/chapter1/check");
+    return runCheck();
   }
 }
 
