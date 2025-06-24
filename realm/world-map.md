@@ -1,5 +1,5 @@
 # Code Realm — World Map
 
-Rank: Adept
-XP: 300
-Completed Chapters: 1
+Rank: Initiate
+XP: 0
+Completed Chapters: None
