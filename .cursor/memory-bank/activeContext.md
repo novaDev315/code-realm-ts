@@ -1,27 +1,27 @@
-🚧 Active Context — Code Realm TS (as of initial import)
+🚧 Active Context — Code Realm TS (after Milestone 1)
 
 Current Focus
 -------------
-Milestone Phases outlined in PRD:
-- Phase 1: Game engine & Player class — **Planned**
-- Phase 2: Chapter 1 module + recursion checker — **Planned**
-- Phase 3: XP system, map, reset logic — **Planned**
+Milestone Phases:
+- Phase 1: Game engine & Player class — **Completed**
+- Phase 2: Chapter 1 module + recursion checker — **Active**
+- Phase 3: XP system, map, reset logic — **Completed**
 
 Immediate Next Steps
 --------------------
-1. Scaffold `src/engine` with `Game.ts`, `Player.ts`, `Chapter.ts`, and `ChapterLoader.ts`.
-2. Implement Chapter 1 (Forest of Recursion) along with sample grader in `quests/chapter1/`.
-3. Build `XPSystem.ts` and basic `WorldMap` generator.
-4. Set up Jest test runner for autograding.
+1. Implement real autograder for Chapter 1 (recursion functions) in `quests/chapter1/check.ts`.
+2. Write Jest-based test harness and integrate with grader.
+3. Expand `WorldMap` visuals and ensure updates after chapter completion.
+4. Add Chapter 2 and Chapter 3 skeletons once autograder is proven.
 
 Open Considerations
 -------------------
-• Decide on CLI library (e.g., Inquirer vs. custom IO wrapper).
-• Define file format for test cases (JSON vs. TS exports).
-• Determine how to persist progress (`xp-tracker.json`) across sessions.
+• Choose assertion library for graders (Jest vs. custom).
+• Finalise JSON vs. TS test case format.
+• Persist settings/config per player.
 
 Active Decisions
 ----------------
-✓ Use fully OOP architecture per spec.
-✓ Containerised runtime via Docker Compose.
-✓ World map stored as markdown for easy view in any environment.
+✓ OOP architecture remains core.
+✓ Docker Compose workflow validated.
+✓ Non-interactive exit handling added to support automated testing.

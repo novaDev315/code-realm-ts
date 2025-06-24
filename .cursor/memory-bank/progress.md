@@ -3,14 +3,15 @@
 What Works
 ----------
 • Project specification captured in Memory Bank (this import).
+• Core TypeScript game engine scaffold (Game loop, Player, Chapter system) implemented and running via Node & Docker.
 
 In Progress / Planned
 ---------------------
 | Phase | Task | Status |
 |-------|------|--------|
-| 1 | Game engine + Player class | Planned |
-| 2 | Chapter1 module + recursion checker | Planned |
-| 3 | XP system, map, and reset logic | Planned |
+| 1 | Game engine + Player class | Completed |
+| 2 | Chapter1 module + recursion checker | In Progress |
+| 3 | XP system, map, and reset logic | Completed |
 | 4 | Chapter loader + chapter2/3 content | Next |
 | 5 | System Design chapters 7–12 | Future |
 | 6 | Optional web UI (React + WebSocket) | Future |
@@ -29,9 +30,8 @@ Next Deliverables
 
 Status Timestamp
 ----------------
-_Initial import — project skeleton stage_
+_Updated after Milestone 1 scaffold implementation_
 
 Future Chapter Plans
 --------------------
-• Core chapters 1–12 are defined for the MVP (see `chapterCatalog.md`).
-• Bonus chapters 13–30 are proposed for post-MVP expansion and will be prioritised after core gameplay is stable.
+• Core chapters 1–12 are defined for the MVP (see `chapterCatalog.md`
