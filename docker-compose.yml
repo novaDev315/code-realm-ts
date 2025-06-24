@@ -1,0 +1,9 @@
+services:
+  code-realm:
+    build: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true 
+    network_mode: host
