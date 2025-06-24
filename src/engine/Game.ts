@@ -63,9 +63,14 @@ export class Game {
     IO.println(`\nEntering ${chapter.title}\n${chapter.lore}\n`);
     const success = await chapter.run();
     if (success) {
-      IO.println("✅ Challenge passed!");
-      await this.player.addXP(chapter.xpReward);
-      await this.player.markChapterComplete(id);
+      const firstClear = !this.player.completedChapters.includes(id);
+      if (firstClear) {
+        IO.println("✅ Challenge passed! XP awarded.");
+        await this.player.addXP(chapter.xpReward);
+        await this.player.markChapterComplete(id);
+      } else {
+        IO.println("♻️  Chapter replayed — no additional XP (already cleared).");
+      }
     } else {
       IO.println("❌ Challenge failed. Try again!");
     }
