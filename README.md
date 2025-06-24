@@ -79,18 +79,8 @@ docker compose up
 ### Testing
 Jest is planned for the test harness. Configure tests under `__tests__/` or within chapter folders.
 
-## 🤝 Contributing
-Pull requests are welcome! Follow the **[Conventional Commits](https://www.conventionalcommits.org)** spec:
-```
-<type>(scope): concise description
-```
-Types: feat, fix, docs, refactor, test, chore, etc.
-
-Run lint & tests before opening a PR:
+Run lint & test:
 ```bash
 npm run lint
 npm test
 ```
-
-## 🛡 License
-MIT © 2024 Code Realm Contributors 
