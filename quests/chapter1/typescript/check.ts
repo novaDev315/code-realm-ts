@@ -44,5 +44,17 @@ export function runCheck(): boolean {
     }
   }
 
+  if (passed) {
+    console.log("✅ All tests passed!");
+  } else {
+    console.log("❌ Some tests failed.");
+    process.exit(1);
+  }
+
   return passed;
+}
+
+// Allow running as standalone script
+if (require.main === module) {
+  runCheck();
 } 

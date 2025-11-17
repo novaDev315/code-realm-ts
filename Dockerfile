@@ -6,6 +6,9 @@ WORKDIR /app
 #     npm config set fetch-retry-maxtimeout 120000 && \
 #     npm config set fetch-retries 5
 
+# Install Python for multi-language support
+RUN apk add --no-cache python3 py3-pip
+
 # Install global TS tools
 RUN npm install -g ts-node typescript
 

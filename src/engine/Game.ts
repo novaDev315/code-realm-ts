@@ -1,6 +1,7 @@
 import { Player } from "./Player";
 import { IO } from "../utils/IO";
 import { ChapterLoader } from "./ChapterLoader";
+import { LanguageRunner } from "../utils/LanguageRunner";
 
 export class Game {
   private player: Player;
@@ -61,7 +62,36 @@ export class Game {
       return;
     }
     IO.println(`\nEntering ${chapter.title}\n${chapter.lore}\n`);
-    const success = await chapter.run();
+
+    // Language selection
+    const supportedLanguages = chapter.supportedLanguages;
+    let selectedLanguage = "typescript"; // default
+
+    if (supportedLanguages.length > 1) {
+      IO.println("📚 Supported languages for this chapter:");
+      supportedLanguages.forEach((lang, index) => {
+        const config = LanguageRunner.getLanguageConfig(lang);
+        IO.println(`  ${index + 1}. ${config?.name || lang}`);
+      });
+
+      const langChoice = await IO.prompt(
+        `\nSelect language (1-${supportedLanguages.length}) or press Enter for TypeScript: `
+      );
+
+      if (langChoice.trim()) {
+        const index = parseInt(langChoice) - 1;
+        if (index >= 0 && index < supportedLanguages.length) {
+          selectedLanguage = supportedLanguages[index];
+        } else {
+          IO.println("Invalid selection, using TypeScript.");
+        }
+      }
+    }
+
+    const config = LanguageRunner.getLanguageConfig(selectedLanguage);
+    IO.println(`\n🔧 Running challenge in ${config?.name || selectedLanguage}...\n`);
+
+    const success = await chapter.run(selectedLanguage);
     if (success) {
       const firstClear = !this.player.completedChapters.includes(id);
       if (firstClear) {

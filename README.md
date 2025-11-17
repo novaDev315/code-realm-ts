@@ -1,17 +1,18 @@
 # Code Realm TS
 
-A gamified command-line RPG for mastering algorithms and system-design in TypeScript.
+A gamified command-line RPG for mastering algorithms and system-design in multiple programming languages.
 
 ---
 
 ## 📜 Overview
 Code Realm TS turns your terminal into a fantasy world where each coding challenge is a chapter in an epic journey. Earn XP, level up ranks, and defeat boss encounters while sharpening real-world engineering skills.
 
-* **Language**: TypeScript (Node 20)
+* **Languages**: TypeScript, JavaScript, Python (with Go support planned)
 * **Architecture**: Fully OOP, chapter-based engine
 * **Runtime**: `ts-node` or Docker
 * **Progression**: Story Mode (linear) + Manual Mode (replay)
 * **Autograding**: Built-in test harness validates solutions instantly
+* **Multi-Language**: Choose your preferred language for each chapter!
 
 ## 🎮 Gameplay at a Glance
 | Rank | XP Required |
@@ -38,14 +39,45 @@ Code Realm TS turns your terminal into a fantasy world where each coding challen
 
 Boss encounters appear every 5 levels culminating in **Core of the Architect** (Chapter 15).
 
+## 🌍 Multi-Language Support
+
+Code Realm supports solving challenges in multiple programming languages! When you start a chapter, you'll be prompted to select your preferred language.
+
+### Currently Supported Languages:
+- **TypeScript** - Full support with type checking
+- **JavaScript** - ES6+ with Node.js runtime
+- **Python** - Python 3 with standard library
+
+### Planned Language Support:
+- **Go** - Coming soon for system design chapters
+- **Rust** - Optional for performance-focused challenges
+
+### Quest Structure (Multi-Language):
+```
+quests/chapter1/
+  ├── typescript/
+  │   ├── recursion.ts
+  │   └── check.ts
+  ├── javascript/
+  │   ├── recursion.js
+  │   └── check.js
+  └── python/
+      ├── recursion.py
+      └── check.py
+```
+
+Each language folder contains:
+- **Solution file** - Where you write your implementations
+- **Check file** - Autograder that tests your solutions
+
 ## 🗂 Directory Structure
 ```
 code-realm-ts/
   src/
     engine/          # Game core (Game, Chapter, Player, Loader)
     chapters/        # Chapter implementations
-    utils/           # XPSystem, WorldMap, IO helpers
-  quests/            # Player-written solutions
+    utils/           # XPSystem, WorldMap, IO helpers, LanguageRunner
+  quests/            # Player-written solutions (multi-language)
   realm/             # xp-tracker.json & world-map.md
   .cursor/           # Memory Bank & rules (auto-generated)
   Dockerfile / docker-compose.yml
