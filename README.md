@@ -27,34 +27,52 @@ Code Realm TS turns your terminal into a fantasy world where each coding challen
 2. **Manual Mode** – Replay completed chapters or simulate failure for practice.
 3. **Reset** – Start fresh, wiping XP and progress.
 
-## 🧩 Chapter Catalog
+## 🧩 Complete Chapter Catalog ✅
 
-### ✅ Implemented Chapters (Playable Now!)
-
+### Algorithm Fundamentals (Chapters 1-5)
 | # | Zone | Concepts | XP | Languages |
 |---|----------------------|--------------------------------------|-----|-----------|
 | 1 | Forest of Recursion | Recursion, Backtracking | 100 | TS, JS, PY |
 | 2 | Mountains of Order | MergeSort, QuickSort | 150 | TS, JS, PY |
 | 3 | Mirror Maze | Sliding Window, Two Pointers | 150 | TS, JS, PY |
 | 4 | Stream of Thoughts | Async/Await, Promises | 150 | TS, JS |
-| **5** | **Labyrinth of Nodes** ⭐ | **Graphs (DFS, BFS, Shortest Path)** | **200** | **TS, JS, PY** |
+| **5** | **Labyrinth of Nodes** ⭐ | **Graphs (DFS, BFS, Paths)** | **200** | **TS, JS, PY** |
 
-**Total Available XP:** 750 (enough to reach Architect rank!)
+**Arc Total:** 750 XP
 
-### 🚧 Planned Chapters (Coming Soon)
+### Data Structures & Backend (Chapters 6-8)
+| # | Zone | Concepts | XP | Languages |
+|---|----------------------|--------------------------------------|-----|-----------|
+| 6 | Caves of Shadows | Dynamic Programming (Knapsack, LCS) | 150 | TS, JS, PY |
+| 7 | Vault of Data | Database Design, SQL Queries | 150 | TS, JS, PY |
+| 8 | Realm of APIs | REST Endpoints, GraphQL Parsing | 150 | TS, JS, PY |
 
-| # | Zone | Concepts | XP |
-|---|----------------------|--------------------------------------|-----|
-| 6 | Caves of Shadows | Dynamic Programming | 150 |
-| 7 | Vault of Data | Database Design, SQL | 150 |
-| 8 | Realm of APIs | REST, GraphQL | 150 |
-| 9 | Dungeon of DevOps | Docker, Containers | 150 |
-| 10 | Citadel of Firewalls ⭐ | Security, Auth | 200 |
-| 11-15 | System Design Arc | Load Balancing, Caching, More | 1000 |
+**Arc Total:** 450 XP
 
-**Total Planned XP:** 2950 (Grandmaster rank achievable!)
+### DevOps & Security (Chapters 9-10)
+| # | Zone | Concepts | XP | Languages |
+|---|----------------------|--------------------------------------|-----|-----------|
+| 9 | Dungeon of DevOps | Docker, Compose, Health Checks | 150 | TS, JS, PY |
+| **10** | **Citadel of Firewalls** ⭐ | **Security, JWT, Rate Limiting** | **200** | **TS, JS, PY** |
 
-⭐ = Master Project chapters (extra XP, comprehensive challenges)
+**Arc Total:** 350 XP
+
+### System Design Mastery (Chapters 11-15)
+| # | Zone | Concepts | XP | Languages |
+|---|----------------------|--------------------------------------|-----|-----------|
+| 11 | Tower of Constructs | URL Shortener, Base62 Encoding | 150 | TS, JS, PY |
+| 12 | Hall of Echoes | Message Queues, Producer-Consumer | 150 | TS, JS, PY |
+| 13 | Crystal Socket Chamber | LRU Cache, Eviction Policies | 150 | TS, JS, PY |
+| 14 | Gate of Trials | Load Balancing, Circuit Breaker | 150 | TS, JS |
+| **15** | **Core of the Architect** ⭐⭐ | **Distributed Systems (FINAL BOSS)** | **300** | **TS, JS, PY** |
+
+**Arc Total:** 900 XP
+
+---
+
+**🎯 TOTAL: 2,450 XP • 15 Complete Chapters • 3 Master Projects**
+
+⭐ = Master Project (extra XP) | ⭐⭐ = Final Boss (highest XP reward!)
 
 ## 🌍 Multi-Language Support
 
