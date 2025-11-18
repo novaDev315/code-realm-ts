@@ -9,7 +9,10 @@
     "start": "node dist/main.js",
     "build": "tsc",
     "test": "jest",
-    "test:grader": "ts-node quests/chapter1/check.ts",
+    "test:grader:ts": "ts-node quests/chapter1/typescript/check.ts",
+    "test:grader:js": "node quests/chapter1/javascript/check.js",
+    "test:grader:py": "python3 quests/chapter1/python/check.py",
+    "test:grader": "npm run test:grader:ts",
     "lint": "eslint . --ext .ts"
   },
   "dependencies": {

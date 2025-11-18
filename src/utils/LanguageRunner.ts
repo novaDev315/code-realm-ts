@@ -85,7 +85,7 @@ export class LanguageRunner {
     try {
       const command = config.testCommand(filePath);
       console.log(`\n🔧 Running: ${command}\n`);
-      const output = execSync(command, {
+      execSync(command, {
         encoding: "utf-8",
         stdio: "inherit",
         cwd: process.cwd(),

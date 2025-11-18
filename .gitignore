@@ -3,3 +3,10 @@ dist/
 *.log
 .DS_Store
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
