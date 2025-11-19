@@ -34,6 +34,48 @@ export const SUPPORTED_LANGUAGES: Record<string, LanguageConfig> = {
     testCommand: (filePath: string) => `go run ${filePath}`,
     checkCommand: (filePath: string) => `go run ${filePath}`,
   },
+  rust: {
+    name: "Rust",
+    extensions: [".rs"],
+    testCommand: (filePath: string) => {
+      const dir = path.dirname(filePath);
+      const basename = path.basename(filePath, ".rs");
+      return `cd ${dir} && rustc ${basename}.rs -o ${basename} && ./${basename}`;
+    },
+    checkCommand: (filePath: string) => {
+      const dir = path.dirname(filePath);
+      const basename = path.basename(filePath, ".rs");
+      return `cd ${dir} && rustc ${basename}.rs -o ${basename} && ./${basename}`;
+    },
+  },
+  java: {
+    name: "Java",
+    extensions: [".java"],
+    testCommand: (filePath: string) => {
+      const dir = path.dirname(filePath);
+      const basename = path.basename(filePath, ".java");
+      return `cd ${dir} && javac ${basename}.java && java ${basename}`;
+    },
+    checkCommand: (filePath: string) => {
+      const dir = path.dirname(filePath);
+      const basename = path.basename(filePath, ".java");
+      return `cd ${dir} && javac ${basename}.java && java ${basename}`;
+    },
+  },
+  cpp: {
+    name: "C++",
+    extensions: [".cpp"],
+    testCommand: (filePath: string) => {
+      const dir = path.dirname(filePath);
+      const basename = path.basename(filePath, ".cpp");
+      return `cd ${dir} && g++ -std=c++17 ${basename}.cpp -o ${basename} && ./${basename}`;
+    },
+    checkCommand: (filePath: string) => {
+      const dir = path.dirname(filePath);
+      const basename = path.basename(filePath, ".cpp");
+      return `cd ${dir} && g++ -std=c++17 ${basename}.cpp -o ${basename} && ./${basename}`;
+    },
+  },
 };
 
 export class LanguageRunner {
