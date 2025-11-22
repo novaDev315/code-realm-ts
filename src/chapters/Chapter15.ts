@@ -5,7 +5,7 @@ export class Chapter15 extends Chapter {
   id = 15;
   title = "Core of the Architect";
   xpReward = 300;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 🏰 Welcome, Architect - To the FINAL BOSS Challenge ⭐⭐
 

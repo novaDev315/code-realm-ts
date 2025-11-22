@@ -5,7 +5,7 @@ export class Chapter2 extends Chapter {
   id = 2;
   title = "Mountains of Order";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 ⛰️  You ascend the Mountains of Order, where chaos must be tamed.
 The ancient monks teach the sacred arts of sorting:

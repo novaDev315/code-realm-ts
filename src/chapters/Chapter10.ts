@@ -5,7 +5,7 @@ export class Chapter10 extends Chapter {
   id = 10;
   title = "Citadel of Firewalls";
   xpReward = 200;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 🔐 Welcome to the Citadel of Firewalls - the MASTER PROJECT ⭐
 The most crucial domain in all the Code Realm. Here you must master the ancient art of security.

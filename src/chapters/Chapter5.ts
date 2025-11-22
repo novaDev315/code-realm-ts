@@ -5,7 +5,7 @@ export class Chapter5 extends Chapter {
   id = 5;
   title = "Labyrinth of Nodes";
   xpReward = 200;
-  supportedLanguages = ["typescript", "javascript", "python", "go", "rust"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 Welcome to the Labyrinth of Nodes, a complex realm of interconnected passages and hidden paths.
 

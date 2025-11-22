@@ -5,7 +5,7 @@ export class Chapter13 extends Chapter {
   id = 13;
   title = "Crystal Socket Chamber";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 Welcome to the Crystal Socket Chamber, a mystical vault where memory itself is crystallized into sockets of finite capacity.
 

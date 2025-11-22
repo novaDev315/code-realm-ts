@@ -5,7 +5,7 @@ export class Chapter7 extends Chapter {
   id = 7;
   title = "Vault of Data";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 🗄️ You discover the Vault of Data, an ancient repository where information is organized and preserved.
 The Vault Keepers teach the sacred art of Database Design:

@@ -5,7 +5,7 @@ export class Chapter11 extends Chapter {
   id = 11;
   title = "Tower of Constructs";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 🏗️ High above the clouds stands the Tower of Constructs, where system architects design solutions at scale.
 

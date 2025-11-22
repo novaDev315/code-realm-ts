@@ -5,7 +5,7 @@ export class Chapter9 extends Chapter {
   id = 9;
   title = "Dungeon of DevOps";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 Welcome to the Dungeon of DevOps, where containerization and orchestration are the keys to mastery.
 

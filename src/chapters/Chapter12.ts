@@ -5,7 +5,7 @@ export class Chapter12 extends Chapter {
   id = 12;
   title = "Hall of Echoes";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 🔊 Welcome to the Hall of Echoes, where messages flow like whispers through an infinite corridor.
 

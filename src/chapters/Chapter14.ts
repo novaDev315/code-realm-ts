@@ -5,7 +5,7 @@ export class Chapter14 extends Chapter {
   id = 14;
   title = "Gate of Trials";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 Welcome to the Gate of Trials, where you must master the art of distributed systems and resilience.
 

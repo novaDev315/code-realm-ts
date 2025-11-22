@@ -5,7 +5,7 @@ export class Chapter3 extends Chapter {
   id = 3;
   title = "Mirror Maze";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 🪞 Welcome to the Mirror Maze, where patterns reflect endlessly.
 Master the techniques of optimization:

@@ -5,7 +5,7 @@ export class Chapter8 extends Chapter {
   id = 8;
   title = "Realm of APIs";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 Welcome to the Realm of APIs, where data flows through carefully designed channels and endpoints govern the exchange of information.
 

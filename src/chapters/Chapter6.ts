@@ -5,7 +5,7 @@ export class Chapter6 extends Chapter {
   id = 6;
   title = "Caves of Shadows";
   xpReward = 150;
-  supportedLanguages = ["typescript", "javascript", "python"];
+  supportedLanguages = ["typescript", "javascript", "python", "go", "rust", "java", "cpp"];
   lore = `
 In the depths of the Caves of Shadows, you discover ancient tablets inscribed with the secrets of memoization and dynamic programming.
 
